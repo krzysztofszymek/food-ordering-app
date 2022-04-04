@@ -1,0 +1,18 @@
+.links {
+    padding: 0 2rem;
+    height: 3rem;
+    position: fixed;
+    top: 5;
+    left: 0;
+    text-align: left;
+}
+
+.links a {
+    display: flex;
+    padding: 0 .5rem;
+    margin: 1rem 0;
+    align-items: center;
+    width: max-content;
+    color: black;
+    text-decoration: none;
+}
