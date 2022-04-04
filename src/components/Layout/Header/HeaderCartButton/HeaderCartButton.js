@@ -1,11 +1,10 @@
-import { useContext, useEffect, useState } from 'react';
+import { useContext } from 'react';
 import styles from './HeaderCartButton.module.css'
 import { FaShoppingCart } from 'react-icons/fa'
 import CartContext from '../../../../context/CartContext/cart-context';
 
 function HeaderCartButton(props) {
     const cartCtx = useContext(CartContext);
-    const [buttonBump, setButtonBump] = useState(false);
 
     const itemsInCart = cartCtx.items.reduce((curr, item) => {
         return curr + item.amount;
